@@ -2,7 +2,9 @@ var config = {};
 
 config.ipAddress = process.env.OPENSHIFT_NODEJS_IP;
 
-
+/*
+Clean this up eventually. eLeave it be for now not doing too much harm
+*/
 
 if (typeof config.ipAddress === "undefined") {
     //  Log errors on OpenShift but continue w/ 127.0.0.1 - this
