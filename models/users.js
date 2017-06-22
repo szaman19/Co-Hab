@@ -7,7 +7,7 @@ var userSchema = new Schema(
   name: String,
   email:String,
   phone: String,
-  group: Array
+  groups: Array
 },
 {
   collection: 'User_Info'

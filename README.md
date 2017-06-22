@@ -17,8 +17,8 @@ shared calendar and announcement board.
     - User Set Up Interface
     - Group Dashboard Interface
   * Web View Temples
+   
 ## Changelog:
   - 06/22/17: Repo transfer to github for Heroku pipeline
-  
-If you want to help work on the project please [email] for more info!
-[email]: <mailto:shehtabzaman@gmail.com>
+
+If you want to help work on the project please [email]: (mailto:shehtabzaman@gmail.com)or more info!

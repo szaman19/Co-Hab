@@ -26,6 +26,7 @@ if(process.env.OPENSHIFT_MONGODB_DB_PASSWORD){
   process.env.OPENSHIFT_MONGODB_DB_PORT + '/' +
   process.env.OPENSHIFT_APP_NAME;
 }else{
-  config.db.connection_string = config.db.url+config.db.dbName;
+  config.db.connection_string = "mongodb://Shehtab:tester123@ds135252.mlab.com:35252/cohab";
+  //Use for local envirnoment when no internet connectin --> config.db.url+config.db.dbName;
 }
 module.exports = config;

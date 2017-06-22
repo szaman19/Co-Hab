@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 /**
  *  Define the sample application.
  */
-var SampleApp = function() {
+var App = function() {
 
     //  Scope.
     var self = this;
@@ -28,8 +28,6 @@ var SampleApp = function() {
         self.port = config.port;
 
     };
-
-
     /**
      *  Populate the cache.
      */
@@ -37,11 +35,9 @@ var SampleApp = function() {
         if (typeof self.zcache === "undefined") {
             self.zcache = { 'index.html': '' };
         }
-
         //  Local cache for static content.
         self.zcache['index.html'] = fs.readFileSync('./index.html');
     };
-
 
     /**
      *  Retrieve entry (content) from cache.
@@ -116,19 +112,6 @@ var SampleApp = function() {
     /**
     *   Initialize database connection and test the connection
     */
-    // self.dbSetupConnection = function(){
-    //   db.connect(function(err){
-    //       if(err) throw (err);
-    //       console.log("Testting Mongo Connection: Succesfully connected to MongoDB");
-    //       self.db = db.get();
-    //
-    //       self.db.close(function(err){
-    //         if(err) throw (err);
-    //         console.log("Connection closed");
-    //       });
-    //     });
-    // }
-
     self.dbSetupConnection = function(){
       mongoose.connect(config.db.connection_string);
       self.db = mongoose.connection;
@@ -148,7 +131,6 @@ var SampleApp = function() {
         self.dbSetupConnection();
         // Create the express server and routes.
         self.initializeServer();
-
     };
 
 
@@ -170,6 +152,6 @@ var SampleApp = function() {
 /**
  *  main():  Main code.
  */
-var zapp = new SampleApp();
-zapp.initialize();
-zapp.start();
+var app = new App();
+app.initialize();
+app.start();
