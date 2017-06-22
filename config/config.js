@@ -10,7 +10,7 @@ if (typeof config.ipAddress === "undefined") {
     console.warn('No OPENSHIFT_NODEJS_IP var, using 127.0.0.1');
     config.ipAddress = "127.0.0.1";
 };
-config.port = process.env.OPENSHIFT_NODEJS_PORT ||process.env.PORT|| 8080;
+config.port = process.env.PORT|| 8080;
 config.db = {};
 config.db.host = process.env.OPENSHIFT_MONGODB_DB_HOST || "localhost";
 config.db.port = process.env.OPENSHIFT_MONGODB_DB_PORT || 270017;
