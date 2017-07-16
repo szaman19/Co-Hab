@@ -1,22 +1,22 @@
 {
-  "name": "OpenShift-Sample-App",
+  "name": "Cohab",
   "version": "1.0.0",
-  "description": "OpenShift Sample Application",
+  "description": "This project is to create an open source software that is a group message client,shared calendar and announcement board.",
   "keywords": [
-    "OpenShift",
+    "Cohab",
     "Node.js",
     "application",
-    "openshift"
+    "collaborative"
   ],
   "author": {
-    "name": "OpenShift",
-    "email": "ramr@example.org",
-    "url": "http://www.openshift.com/"
+    "name": "Shehtab Zaman",
+    "email": "shehtabzaman@gmail.com",
+    "url": "http://www.szaman19.github.io"
   },
-  "homepage": "http://www.openshift.com/",
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/openshift/origin-server"
+    "url": "https://github.com/szaman19/co-hab"
   },
   "engines": {
     "node": ">= 0.6.0",

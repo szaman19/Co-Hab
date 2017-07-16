@@ -25,4 +25,4 @@ shared calendar and announcement board.
 
 
 
-If you want to help work on the project please [email](mailto:shehtabzaman@gmail.com)or more info!
+If you want to help work on the project please [email](mailto:shehtabzaman@gmail.com) or more info!

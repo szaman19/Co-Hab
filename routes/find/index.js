@@ -16,6 +16,14 @@ routes.get('/', function(req, res) {
 });
 
 // routes.get('/:email',email);
-routes.use('/:email',email);
-routes.use('/:phone',phone);
+
+// routes.param('email',function(reg,res,next, email){
+//   req.
+// });
+routes.use('/email',email);
+// routes.use('/:phone',phone);
+
+// routes.get('/:email',function(req,res){
+//   res.status(200).json(req.params.email);
+// });
 module.exports = routes;
